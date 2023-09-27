@@ -2,48 +2,100 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>JS Piano</title>
+        <title>JS Piano - Happy Birthday!!</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
 
-        <div id="piano">
+        <section id="wrap">
+            <header>
+                <h1>JS Piano</h1>
+                <h2>Use your keyboard. Hover for hints.</h2>
+                <h2>Happy Birthday!! Ori</h2>
+            </header>
+            <section id="main">
 
-            <div class="keys">
-                <div class="black-keys">
-                    <div class="key black-key"></div>
-                    <div class="key black-key"></div>
-                    <div class="key black-key"></div>
-                    <div class="key black-key"></div>
-                    <div class="key black-key"></div>
-                    <div class="key black-key"></div>
-                    <div class="key black-key"></div>
-                    <div class="key black-key"></div>
-                    <div class="key black-key"></div>
-                    <div class="key black-key"></div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/N2BV9lHdzrI?si=BOcyYHYBNuy9Uo-3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                
+                <div class="nowplaying"></div>
+                <div class="keys">
+                <div data-key="65" class="key" data-note="C">
+                    <span class="hints">A</span>
                 </div>
-
-                <div class="white-keys">
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
-                    <div class="key white-key"></div>
+                <div data-key="87" class="key sharp" data-note="C#">
+                    <span class="hints">W</span>
+                </div>
+                <div data-key="83" class="key" data-note="D">
+                    <span class="hints">S</span>
+                </div>
+                <div data-key="69" class="key sharp" data-note="D#">
+                    <span class="hints">E</span>
+                </div>
+                <div data-key="68" class="key" data-note="E">
+                    <span class="hints">D</span>
+                </div>
+                <div data-key="70" class="key" data-note="F">
+                    <span class="hints">F</span>
+                </div>
+                <div data-key="84" class="key sharp" data-note="F#">
+                    <span class="hints">T</span>
+                </div>
+                <div data-key="71" class="key" data-note="G">
+                    <span class="hints">G</span>
+                </div>
+                <div data-key="89" class="key sharp" data-note="G#">
+                    <span class="hints">Y</span>
+                </div>
+                <div data-key="72" class="key" data-note="A">
+                    <span class="hints">H</span>
+                </div>
+                <div data-key="85" class="key sharp" data-note="A#">
+                    <span class="hints">U</span>
+                </div>
+                <div data-key="74" class="key" data-note="B">
+                    <span class="hints">J</span>
+                </div>
+                <div data-key="75" class="key" data-note="C">
+                    <span class="hints">K</span>
+                </div>
+                <div data-key="79" class="key sharp" data-note="C#">
+                    <span class="hints">O</span>
+                </div>
+                <div data-key="76" class="key" data-note="D">
+                    <span class="hints">L</span>
+                </div>
+                <div data-key="80" class="key sharp" data-note="D#">
+                    <span class="hints">P</span>
+                </div>
+                <div data-key="186" class="key" data-note="E">
+                    <span class="hints">;</span>
                 </div>
             </div>
-
-        </div>
-
-
+            <audio data-key="65" src="piano-wav/040.wav"></audio>
+            <audio data-key="87" src="piano-wav/041.wav"></audio>
+            <audio data-key="83" src="piano-wav/042.wav"></audio>
+            <audio data-key="69" src="piano-wav/043.wav"></audio>
+            <audio data-key="68" src="piano-wav/044.wav"></audio>
+            <audio data-key="70" src="piano-wav/045.wav"></audio>
+            <audio data-key="84" src="piano-wav/046.wav"></audio>
+            <audio data-key="71" src="piano-wav/047.wav"></audio>
+            <audio data-key="89" src="piano-wav/048.wav"></audio>
+            <audio data-key="72" src="piano-wav/049.wav"></audio>
+            <audio data-key="85" src="piano-wav/050.wav"></audio>
+            <audio data-key="74" src="piano-wav/051.wav"></audio>
+            <audio data-key="75" src="piano-wav/052.wav"></audio>
+            <audio data-key="79" src="piano-wav/053.wav"></audio>
+            <audio data-key="76" src="piano-wav/054.wav"></audio>
+            <audio data-key="80" src="piano-wav/055.wav"></audio>
+            <audio data-key="186" src="piano-wav/056.wav"></audio>
+            </section>
+            </section>
+            <video playsinline autoplay muted loop id="bgvid" poster="piano-wav/bg.jpg">
+                <source src="piano-wav/bg.mp4" type="video/mp4">
+            </video>
         <script src="app.js"></script>
     </body>
 </html>
